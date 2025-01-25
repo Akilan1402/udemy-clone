@@ -141,7 +141,9 @@ opacity: 1;
 }
 
 .course-card {
-    width: 340px;
+    flex-grow: 1;
+    flex-basis: 20%;
+    margin:5px;
 
 }
 
@@ -194,3 +196,25 @@ flex-wrap: wrap;
     margin: 10px;
     align-items: center;
 }
+
+
+
+@media screen and (max-width:600px){
+    body{
+        font-size: 10px;
+    }
+}
+
+
+@media screen and (max-width:600px){
+    .course-card{
+        flex-basis: 40%;
+    }
+   .info{
+    display: none;
+   }
+   .navbar__s2,.navbar__s3{
+    display: none;
+   }
+
+    }
